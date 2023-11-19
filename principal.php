@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -24,12 +25,17 @@
 
 					<div class="container-logo">
 						<i class="fa-solid fa-mug-hot"></i>
-						<h1 class="logo"><a href="/">Restaurante Gastronomico Mar y Luna</a></h1>
+						<h1 class="logo"><a href="principal.php">Restaurante Gastronomico Mar y Luna</a></h1>
 					</div>
 
 					<div class="container-user">
 						<i class="fa-solid fa-user"></i>
 					</div>
+					<div class="dropdown-menu">
+                    <form action="cerrar_sesion.php" method="post">
+        <button type="submit" class="boton-cerrar-sesion">Cerrar sesión</button>
+    </form>
+            </div>
 				</div>
 			</div>
 
@@ -46,6 +52,7 @@
 				</nav>
 			</div>
 		</header>
+		
 
         <div class="container-com">
         <img src="./img/galeria/1.jpeg" alt="Image 1">
@@ -57,11 +64,45 @@
         <img src="./img/galeria/7.jpeg" alt="Image 7">
 
     </div>
-
-
 		<script
 			src="https://kit.fontawesome.com/81581fb069.js"
 			crossorigin="anonymous"
 		></script>
 	</body>
+	<style>
+
+		.contacto{
+			margin-bottom: 60px;
+		}
+
+		.redes-sociales{
+			padding: 1px;
+			background-color: #c7a17a;
+		}
+
+		.redes-sociales img{
+			padding: 9px;
+			border-radius: 100%;
+			width: 100px;
+			transition: .3s ease all;
+			position:inherit;		}
+
+		.redes-sociales img:hover{
+			transform: scale(1.2);
+		}
+
+		.negro {
+			color:white
+		}
+
+	</style>
+        <footer class="redes-sociales">
+            <div class="col-auto">
+                <a href="https://wa.link/p36co0"><img src="img/iconos/whatsapp1.png" alt="" width="50" height="50"></a>
+                <a href="https://www.facebook.com/josemanuel.cobaledarodriguez.1"><img src="img/iconos/facebook1.png" alt="" width="50" height="50"></a>
+                <a href="https://www.instagram.com/manpa17/"><img src="img/iconos/instagram.png" alt="" width="50" height="50"></a>
+                
+            </div>
+            <p class="negro">Todos los derechos reservados 2021</p>
+        </footer>
 </html>
